@@ -27,7 +27,7 @@ update:; @forge update
 # Build the project
 build:; @forge build --build-info --sizes
 
-test :; @forge test --gas-report
+test :; @forge test --gas-report -vvv
 
 coverage :; @forge coverage
 

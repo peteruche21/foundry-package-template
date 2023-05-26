@@ -25,10 +25,10 @@ jobs:
       - name: Run Forge build
         run: |
           forge --version
-          forge build --sizes
+          make build target=core
         id: build
 
       - name: Run Forge tests
         run: |
-          forge test -vvv
+          make test target=core
         id: test
